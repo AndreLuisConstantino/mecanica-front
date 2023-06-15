@@ -58,3 +58,18 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 425px) {
+    header {
+        padding: 0;
+    }
+
+    .logo__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo__container img {
+        width: 200px;
+    }
+}

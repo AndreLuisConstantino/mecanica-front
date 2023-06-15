@@ -1,13 +1,18 @@
 main{
-    height: 75vh;
-}
-.card__container{
-    height: 100%;
-    gap: 55px;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+}
+.card__container{
+    height: 100%;
+    width: 100%;
+    gap: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 .card{
     display: grid;
@@ -16,7 +21,7 @@ main{
     "icon"
     "text";
     height: 20vh;
-    width: 17vw;
+    min-width: 17vw;
     background-color: #C6C6C6;
     transition: .7s;
 
@@ -50,4 +55,14 @@ main{
 
 .card:hover span {
     color: #ffffff;
+}
+
+@media (max-width: 425px) {
+    .card__container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 70vw;
+    }
 }

@@ -44,6 +44,7 @@ main{
     align-self: center;
     display: flex;
     flex-wrap: wrap;
+    overflow-y: scroll;
     justify-content: center;
     align-items: center;
     gap: 32px;
@@ -54,8 +55,8 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-width: 12vw;
-    min-height: 25vh;
+    min-width: 10vw;
+    height: 20vh;
     cursor: pointer;
     box-shadow: 5px 5px 5px 1px #D2D2D2;
     background-color: #D9D9D9;
@@ -70,7 +71,7 @@ main{
     transform: scale(1.05)
 }
 .card__title{
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 900;
     padding-top: 2rem;
@@ -86,4 +87,12 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+@media (max-width: 425px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
