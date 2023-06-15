@@ -1,78 +1,157 @@
 main{
-    height: 75vh;
-    display: grid;
-    grid-template-areas: 
-    "titulo"
-    "criterios"
-    "botoes";
-    grid-template-rows: 15% 70% 15%;
+    height: 100vh;
 }
-.title-container{
-    position: absolute;
-    display: grid;
-    left: 5vw;
-    grid-template-columns: 30% 70%;
-    grid-template-areas: "legenda alunos";
-    width: 70vw;
-    margin-top: 4vh;
-    grid-area: titulo;
+
+.main__container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title{
-    grid-area: alunos;
+    color: #095B8A;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+.criterio__container{
+    height: 70%;
     display: flex;
-    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.criterio__cards{
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+.criterios__nome__desc{
+    width: 21vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.criterio_titles{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.criterio__h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.criterio_desc{
+    font-weight: bold;
+    font-size: .9rem;
+    display: flex;
     align-self: center;
     justify-self: center;
-    padding-top: 2%;
+    text-align: center;
+}
+.criterio__span{
     font-weight: bold;
 }
-.legendas{
-    grid-area: legenda;
+.criterio__desejado{
     display: flex;
-    font-size: 1rem;
-    align-self: center;
-    justify-self: start;
-    gap: 20px;
-    padding-top: 2%;
-    color: #073f5c;   
+    flex-direction: column;
+    gap: 10px;
 }
-.blue-square{
-    height: 10px;
-    width: 10px;
-    align-self: center;
-    background-color: blue;
+.criterio__obtido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.red-square{
-    height: 10px;
-    width: 10px;
-    align-self: center;
-    background-color: red;
+.criterio__observacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.criterio__avaliacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.container-filter {
-    grid-area: filter;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-}
-
-.filter {
-    width: 5vw;
+.input-desejado-obtido{
     height: 3vh;
+    width: 6vw;
+}
+.input-obs-avaliacao{
+    height: 10vh;
+}
+.line{
+    height: 1px;
+    width: 80vw;
+    background-color: #000;
+    margin-bottom: 4vh;
+}
+.buttons{
+    align-self: flex-end;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+}
+.button-send{
+    color: #095B8A;
+    height: 4vh;
+    width: 4vw;
+    background-color: #BEBEBE;
+    border: 0;
+}
+.button-cancel{
+    color: #FF3D3D;
+    height: 4vh;
+    width: 5vw;
+    background-color: #BEBEBE;
+    border: 0;
+}
+
+.container-registro-tempo{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
     align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 40vh;
     background-color: #D9D9D9;
-    color: #2884B2;
+    margin-left: 10vw;
+    gap: 3%;
 }
 
-.criterios-container {
-    grid-area: criterios;
+.title-registro-tempo{
+    grid-area: title;
+    align-self: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3C83AC;
 }
 
-.buttons-tarefa__container {
-    grid-area: botoes;
+.container-questions{
+    display: grid;
+    grid-template-areas: 
+    "question input";
+
 }
+
+.questions{
+    grid-area: question;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 9vw;
+    gap: 8%;
+}
+
+.inputs-questions{
+    grid-area: input;
+    display: flex;
+    flex-direction: column;
+    gap:  10px;
+}
+
