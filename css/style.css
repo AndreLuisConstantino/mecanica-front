@@ -25,7 +25,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: .7rem;
+    font-size: .6rem;
     color: #ffff;
     background-color: #2884B2;
 }
@@ -37,6 +37,10 @@ footer {
 .container-login {
     width: 1fr;
     height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #ffff;
 }
 
@@ -44,12 +48,10 @@ h1 {
     font-size: 1rem;
     font-weight: 100;
     text-transform: uppercase;
-    padding-top: 14rem;
-    padding-left: 9rem;
+    margin-right: 10rem;
 }
 
 .logo-senai {
-    margin-left: 9rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -58,14 +60,12 @@ h2 {
     font-size: .7rem;
     font-weight: 100;
     text-transform: uppercase;
-    padding-left: 9rem;
 }
 
 .container-autenticacao {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    margin-left: 9rem;
 }
 
 h3 {
@@ -91,8 +91,4 @@ button {
     font-weight: 900;
     color: #ffff;
     background-color: #f00;
-}
-
-.container {
-    margin-left: 5rem;
 }
