@@ -1,1 +1,1 @@
-# mecanica-front
+# telinhas-projeto-mecanica
