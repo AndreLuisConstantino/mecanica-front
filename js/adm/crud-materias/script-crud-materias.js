@@ -21,10 +21,6 @@ const criarCardMateria = (materia) => {
     cardTitle.classList.add("card__title")
     cardTitle.textContent = `${materia.sigla}`
 
-    const cardCarga = document.createElement("span")
-    cardCarga.classList.add("card__carga")
-    cardCarga.textContent = `Carga Horária: ${materia.carga_horaria}`
-
     const cardInteracao = document.createElement("div")
     cardInteracao.classList.add("buttons__container")
 
@@ -69,7 +65,7 @@ const criarCardMateria = (materia) => {
     buttonEditar.append(iconeEditar)
     cardInteracao.append(buttonEditar, buttonExcluir)
 
-    cardMateria.append(cardTitle, cardCarga, cardInteracao)
+    cardMateria.append(cardTitle, cardInteracao)
 
     return cardMateria
 }

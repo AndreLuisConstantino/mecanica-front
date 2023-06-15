@@ -14,6 +14,7 @@ main{
     width: 70vw;
     margin-top: 4vh;
 }
+
 .title{
     grid-area: materias;
     display: flex;
@@ -23,6 +24,7 @@ main{
     padding-top: 2%;
     font-weight: bold;
 }
+
 .icons{
     grid-area: icons;
     display: flex;
@@ -33,6 +35,7 @@ main{
     padding-top: 2%;
     color: #073f5c;   
 }
+
 .card-container{
     height: 70%;
     width: 80%;
@@ -43,8 +46,9 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 32px;
 }
+
 .card__materia{
     display: flex;
     flex-direction: column;
@@ -53,16 +57,25 @@ main{
     min-width: 12vw;
     min-height: 25vh;
     cursor: pointer;
+    box-shadow: 5px 5px 5px 1px #D2D2D2;
     background-color: #D9D9D9;
     transition: 0.7s;
 }
+
+.card__materia:hover {
+    transform: scale(1.1);
+}
+
 .card:hover{
     transform: scale(1.05)
 }
 .card__title{
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 2rem;
 }
+
 .card__carga{
     justify-self: center;
 }
