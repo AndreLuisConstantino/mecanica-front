@@ -95,4 +95,9 @@ main{
         flex-direction: column;
         flex-wrap: nowrap;
     }
+
+    .card__materia {
+        width: 50vw;
+        height: 30vh;
+    }
 }

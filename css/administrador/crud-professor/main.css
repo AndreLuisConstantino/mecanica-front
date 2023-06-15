@@ -117,3 +117,13 @@ main{
     color: red;
 }
 
+@media (max-width: 425px) {
+    .card-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .card__professor {
+        width: 50vw;
+    }
+}

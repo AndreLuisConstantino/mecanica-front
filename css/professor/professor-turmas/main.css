@@ -1,8 +1,15 @@
 main{
-    height: 75vh;
+    min-height: 75vh;
+    width: 100%;
     font-family:  'Inter', 'sans-serif';
+    display: grid;
+    grid-template-areas: 
+    "icone"
+    "cards";
+    grid-template-rows: 100px 1fr;
 }
 .turma-icon{
+    grid-area: icone;
     position: absolute;
     left: 18vw;
     display: grid;
@@ -32,7 +39,8 @@ main{
     
 }
 .card-container{
-    height: 90%;
+    grid-area: cards;
+    height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -49,10 +57,11 @@ main{
     "periodo"
     "botoes";
     min-height: 25vh;
-    width: 15vw;
+    min-width: 15vw;
     padding: 15px;
     background-color: #D9D9D9;
     transition: .7s;
+    cursor: pointer;
 }
 .card__title{
     grid-area: title;
@@ -79,4 +88,11 @@ main{
     grid-area: botoes;
     justify-self: center;
     align-self: center;
+}
+
+@media (max-width: 425px) {
+    .card-container {
+        flex-direction: column;
+        
+    }
 }

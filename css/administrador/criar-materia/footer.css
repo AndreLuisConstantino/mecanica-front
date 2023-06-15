@@ -8,3 +8,9 @@ footer {
     font-size: .7rem;
     color: #fff;
 }
+
+@media (max-width: 425px) {
+    footer {
+        text-align: center;
+    }
+}

@@ -13,7 +13,7 @@ header {
 }
 
 .logo__container {
-    width: 32.84vw;
+    min-width: 32.84vw;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -34,9 +34,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
     height: auto;
     color: #095B8A;
+    gap: 10px;
 }
 
 .info-aluno__container img {
@@ -58,4 +58,19 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 425px) {
+    header {
+        padding: 0;
+    }
+
+    .logo__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo__container img {
+        width: 200px;
+    }
 }

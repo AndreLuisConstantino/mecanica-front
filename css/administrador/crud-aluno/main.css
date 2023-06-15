@@ -79,3 +79,14 @@ main{
     align-items: center;
     flex-direction: column;
 }
+
+@media (max-width: 425px) {
+    .card-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .card-aluno {
+        width: 50vw;
+    }
+}
