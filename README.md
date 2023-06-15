@@ -1,1 +1,1 @@
-# telinhas-projeto-mecanica
+# projeto-mecanica
