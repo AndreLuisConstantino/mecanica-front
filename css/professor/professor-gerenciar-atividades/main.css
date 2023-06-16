@@ -45,11 +45,12 @@ main{
 }
 .card__curso{
     display: grid;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas: 
     "nome"
     "sigla"
-    "carga";
+    "carga"
+    "icone";
     width: 12vw;
     height: 25vh;
     cursor: pointer;
@@ -60,11 +61,17 @@ main{
 .card__curso a {
     color: #000;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
 }
 
 .card__curso span{
     align-self: center;
     justify-self: center;
+    font-size: 1.1rem;
 }
 
 .card__curso i{
@@ -85,17 +92,13 @@ main{
 
 .card__interacao{
     justify-self: center;
+    grid-area: icone;
 }
 
 .card__h1{
     font-size: 2rem;
     font-weight: bold;
     font-family:  'Inter', 'sans-serif';
-}
-
-.card-container a {
-    color: #000;
-    text-decoration: none;
 }
 .alert-excluir{
     font-size: 1.5rem;
