@@ -1,17 +1,10 @@
-main{
-    height: 75vh;
-}
 .main__container{
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.title{
-    color: #095B8A;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-}
+
 .criterio__container{
     height: 70%;
     display: flex;
@@ -43,7 +36,7 @@ main{
     font-weight: bolder;
 }
 .criterio_desc{
-    font-weight: bold;
+    font-weight: 900;
     font-size: .9rem;
     display: flex;
     align-self: center;
@@ -79,7 +72,7 @@ main{
     width: 6vw;
 }
 .input-obs-avaliacao{
-    height: 10vh;
+    height: 2rem;
 }
 .line{
     height: 1px;
@@ -89,7 +82,7 @@ main{
 }
 .buttons{
     align-self: flex-end;
-    margin-right: 3vw;
+    margin-right: 21rem;
 }
 .button-send{
     color: #095B8A;
@@ -97,6 +90,7 @@ main{
     width: 4vw;
     background-color: #BEBEBE;
     border: 0;
+    cursor: pointer;
 }
 .button-cancel{
     color: #FF3D3D;
@@ -104,4 +98,11 @@ main{
     width: 5vw;
     background-color: #BEBEBE;
     border: 0;
+    cursor: pointer;
+}
+
+.text-desejado {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
 }
