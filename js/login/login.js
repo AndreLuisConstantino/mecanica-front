@@ -4,7 +4,7 @@ const buttonEntrar = document.getElementById('button-entrar')
 
 const entrar = () => {
 
-alert('ifbiasuif')
+window.location.href = '../pages/aluno/portal-aluno.html'
 
 }
 

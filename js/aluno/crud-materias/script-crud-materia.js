@@ -6,20 +6,22 @@ const materias = await getMateria()
 
 const listMaterias = materias.materias
 
-const criarCardMateria = (materia) =>{
+const criarCardMateria = (materia) => {
 
     const cardMateria = document.createElement('div')
     cardMateria.classList.add('card')
+    cardMateria.setAttribute('id', 'id')
+    cardMateria.addEventListener('click', nextPage)
 
     const cardTitle = document.createElement('span')
     cardTitle.classList.add('card-title')
-    cardTitle.textContent = `${materia.nome}`
+    cardTitle.textContent = `${materia.sigla}`
 
-    const cardCarga = document.createElement('span')
-    cardCarga.classList.add('card-carga')
-    cardCarga.textContent = `${materia.carga_horaria} Horas`
+    const nomeMateria = document.createElement('span')
+    nomeMateria.classList.add('nome-materia')
+    nomeMateria.textContent = `${materia.nome}`
 
-    cardMateria.append(cardTitle, cardCarga)
+    cardMateria.append(cardTitle, nomeMateria)
 
     return cardMateria
 }
@@ -30,6 +32,11 @@ const carregarCard = () => {
     const cards = listMaterias.map(criarCardMateria)
 
     container.replaceChildren(...cards)
+    
+}
+
+const nextPage = () => {
+    window.location.href = '../../pages/aluno/tarefas.html'
 }
 
 carregarCard()

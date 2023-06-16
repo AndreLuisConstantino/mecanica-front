@@ -1,0 +1,71 @@
+.background {
+    height: 90vh;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-right: 9.4rem;
+}
+
+.logo-senai {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 11.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.container-autenticacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+input {
+    width: 15.5rem;
+    height: 2rem;
+    border: 1px solid #2884B2;
+    background: #E6ECF8;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    margin-top: 2rem;
+}
+
+button {
+    width: 7rem;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background: #f00;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2884B2;
+}

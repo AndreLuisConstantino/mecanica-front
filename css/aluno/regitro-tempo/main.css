@@ -1,79 +1,61 @@
-main {
-    height: 75vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 2%;
-    gap: 7%;
-
+.card {
+    width: 55rem;
+    height: 30rem;
+    background-color: #fff;
 }
 
-.title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: right;
-    color: #095B8A;
-    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-.container-registro {
-    width: 60%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5%;
-    background-color:  #E4E4E4;
-
-}
-
-.container-content{
-    height: fit-content;
-    
-}
-.container-content div{
+.inputs {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 4rem;
+    margin-left: 18rem;
+    gap: 12px;
 }
 
-.container-content span{
-    font-weight: 700;
-    padding-bottom: 2%;
+.input-data {
+    width: 20rem;
+    height: 2.5rem;
+    border: 1px solid #2884B2;
+    background: #E6ECF8;
 }
 
-.input-observation{
-    width: 20vw;
-    height: 15vh;
+.input-inicio {
+    width: 20rem;
+    height: 2.5rem;
+    border: 1px solid #2884B2;
+    background: #E6ECF8;
 }
 
-.container-buttons{
-    width: 60%;
+.input-observacao {
+    width: 20rem;
+    height: 8rem;
+    border: 1px solid #2884B2;
+    background: #E6ECF8;
+}
+
+.text-input {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.container-button {
+    width: 98rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 2rem;
 }
 
-.back{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4vw;
-    height: 4vh;
-    background-color: #E4E4E4;
-    color: #ff0000;
+button {
+    width: 6rem;
+    height: 2.5rem;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #f00;
 }
 
-.next{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4vw;
-    height: 4vh;
-    background-color: #E4E4E4;
-    color: #095B8A;
+button:hover {
+    background-color: #2884B2;
 }
