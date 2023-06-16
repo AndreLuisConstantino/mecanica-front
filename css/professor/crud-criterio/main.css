@@ -1,0 +1,135 @@
+header {
+    height: 10vh;
+}
+
+main{
+    height: 79vh;
+}
+
+footer {
+    height: 97px;
+}
+
+.titles{
+    display: flex;
+    flex-direction: row;
+    gap: 16%;
+    
+}
+.title{
+    color: #095B8A;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p{
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    margin: 3%;
+}
+.criterio_container{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.criterios_cards{
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+}
+.criterios_nome_desc{
+    width: 21vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.criterio_h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.criterio_desc{
+    font-weight: bold;
+    font-size: .9rem;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.criterio_span{
+    font-weight: bold;
+}
+.criterio_desejado{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.criterio_obtido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.criterio_observacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.criterio_avaliacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-desejado-obtido{
+    height: 3vh;
+    width: 6vw;
+}
+.input-observacao-avaliacao{
+    height: 10vh;
+}
+.line{  
+    height: 1px;
+    width: 80vw;
+    background-color: black;
+    margin-top: 1rem;
+}
+
+
+.btn-primary{
+    height: 50px;
+    margin-top: 2rem;
+    background-color: aqua;
+}
+.container_icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    margin-right: 15%;
+    gap: 10px;
+}
+.button-send{
+    color: #095B8A;
+    height: 4vh;
+    width: 4vw;
+    background-color: #BEBEBE;
+    border: 0;
+}
+
+.button-cancel{
+    color: #FF3D3D;
+    height: 4vh;
+    width: 5vw;
+    background-color: #BEBEBE;
+    border: 0;
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/professor/crud-criterio/style.css">
+    <link rel="stylesheet" href="../../css/professor/crud-criterio/header.css">
+    <link rel="stylesheet" href="../../css/professor/crud-criterio/main.css">
+    <link rel="stylesheet" href="../../css/professor/crud-criterio/footer.css">
+    <link rel="stylesheet" href="../../css/professor/crud-criterio/reset.css">
+    <link rel="stylesheet" href="../../css/professor/crud-criterio/main-nao-critico.css">
+    <link rel="stylesheet" href="../../css/professor/crud-criterio/modal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c38fde6dad.js" crossorigin="anonymous"></script>
+    <title>Criterios</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo__container">
+            <img src="../../img/logo-senai.png" alt="Logo senai">
+            <h1 class="logo__text">Portal do Professor</h1>
+        </div>
+        <div class="info-aluno__container">
+            <div class="person__container">
+                <img src="../../img/person.png" alt="imagem aluno">
+            </div>
+
+            <div class="text__align">
+                <span>Artur de Miranda Alves</span>
+                <span>Professor</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="titles">
+            <p class="p">Os critérios em negrito são críticos</br>
+                E os em letras mais finas são os desejaveis</p>
+
+            <h1 class="title">Eixo Cilíndrico de Três Corpos</h1>
+
+            <!--botão modal adicionar -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-adicionar">
+                <i class="fa-sharp fa-solid fa-plus"></i>
+            </button>
+            <!--botão modal adicionar -->
+        </div>
+        <!--div para criterios -->
+        <div class="criterio_container">
+            <div class="criterios_cards">
+                <div class="criterios_nome_desc">
+                    <span class="criterio_h1">Critério</span>
+                    <span class="criterio_desc">Preencheu na folha de auto inspeção as medidas reais da peça usinada
+                        (paquímetro)</span>
+                </div>
+                <div class="criterio_desejado">
+                    <span class="criterio_span">Desejado</span>
+                    <input type="text" class="input-desejado-obtido">
+                    <input type="text" class="input-desejado-obtido">
+                </div>
+                <div class="criterio_obtido">
+                    <span class="criterio_span">Obtido</span>
+                    <input type="text" class="input-desejado-obtido">
+                    <input type="text" class="input-desejado-obtido">
+                </div>
+                <div class="criterio_observacao">
+                    <span class="criterio_span">Observação</span>
+                    <input type="text" class="input-observacao-avaliacao">
+
+                </div>
+                <div class="criterio_avaliacao">
+                    <span class="criterio_span">Avaliação</span>
+                    <input type="text" class="input-observacao-avaliacao">
+
+                </div>
+
+                <div class="container_icons">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modal-excluir">
+                        <i class="fa-solid fa-x"></i> </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-editar">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="criterio_container_nao_critico">
+            <div class="criterios_cards_nao_critico">
+                <div class="criterios_nome_desc_nao_critico">
+                    <span class="criterio_h1_nao_critico">Critério</span>
+                    <span class="criterio_desc_nao_critico">Preencheu na folha de auto inspeção as medidas reais da peça
+                        usinada
+                        (paquímetro)</span>
+                </div>
+                <div class="criterio_desejado_nao_critico">
+                    <span class="criterio_span">Desejado</span>
+                    <input type="text" class="input-desejado-obtido">
+                    <input type="text" class="input-desejado-obtido">
+                </div>
+                <div class="criterio_obtido_nao_critico">
+                    <span class="criterio_span">Obtido</span>
+                    <input type="text" class="input-desejado-obtido">
+                    <input type="text" class="input-desejado-obtido">
+                </div>
+                <div class="criterio_observacao_nao_critico">
+                    <span class="criterio_span">Observação</span>
+                    <input type="text" class="input-observacao-avaliacao">
+
+                </div>
+                <div class="criterio_avaliacao_nao_critico">
+                    <span class="criterio_span">Avaliação</span>
+                    <input type="text" class="input-observacao-avaliacao">
+
+                </div>
+                <div class="container_icons">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modal-excluir">
+                        <i class="fa-solid fa-x"></i>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal-editar">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                </div>
+
+            </div>
+            <div class="line"></div>
+        </div>
+        <!-- <div class="container_button">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-adicionar">
+                Salvar </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-adicionar">
+                Cancelar </i>
+            </button>
+        </div> -->
+        <div class="buttons">
+            <button class="button-cancel">CANCELAR</button>
+            <button class="button-send">ENVIAR</button>
+        </div>
+    </main>
+    <!--modal adicionar-->
+    <div class="modal fade" id="modal-adicionar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">CRIAR CRITERIO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-curso">
+                        <h1 class="form-title">Cadastro de informações</h1>
+                        <form class="formulario-esquerdo">
+                            <div container="container_form">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" id="inputNomeCurso" class="form-control"
+                                        aria-labelledby="passwordHelpBlock">
+                                </div>
+                            </div>
+
+                            <div class="container_form">
+                                <div class="mb-7">
+                                    <label for="exampleFormControlInput1" class="form-label">Critérios
+                                        Desejados:</label>
+                                    <button class="button-send"><i class="fa-sharp fa-solid fa-plus"></i></button>
+
+                                </div>
+                                <div class="input-criterios__container">
+                                    <input type="text" id="input" class="form-control"
+                                        aria-labelledby="passwordHelpBlock">
+                                    <input type="text" id="input" class="form-control"
+                                        aria-labelledby="passwordHelpBlock">
+                                    <input type="text" id="input" class="form-control"
+                                        aria-labelledby="passwordHelpBlock">
+                                </div>
+                            </div>
+                        </form>
+                        <form class="formulario-direito">
+                            <div class="container__numero">
+                                <label for="exampleFormControlInput1" class="form-label">Numero:</label>
+                                <input type="text" id="input" class="form-control" aria-labelledby="passwordHelpBlock">
+                            </div>
+                            <div class="container_tempo-previsto">
+                                <label for="exampleFormControlInput1" class="form-label">Tempo previsto:</label>
+                                <input type="time" id="input" class="form-control" aria-labelledby="passwordHelpBlock">
+                            </div>
+                            <div class="container_critico-desejavel">
+                                <div class="materias__container">
+                                    <span>Este critério é:</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Crítico
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Desejavel
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="salvarAdicionar">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal adicionar-->
+
+    <!--modal editar-->
+    <div class="modal fade" id="modal-editar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">EDITAR CURSO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-curso">
+                        <h1 class="form-title">Cadastro de informações</h1>
+                        <form class="formulario-esquerdo">
+                            <div container="container_form">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" id="inputNomeCurso" class="form-control"
+                                        aria-labelledby="passwordHelpBlock">
+                                </div>
+                            </div>
+
+                            <div class="container_form">
+                                <div class="mb-7">
+                                    <label for="exampleFormControlInput1" class="form-label">Critérios
+                                        Desejados:</label>
+                                    <button class="button-send"><i class="fa-sharp fa-solid fa-plus"></i></button>
+
+                                </div>
+                                <div class="input-criterios__container">
+                                    <input type="text" id="input" class="form-control"
+                                        aria-labelledby="passwordHelpBlock">
+                                    <input type="text" id="input" class="form-control"
+                                        aria-labelledby="passwordHelpBlock">
+                                    <input type="text" id="input" class="form-control"
+                                        aria-labelledby="passwordHelpBlock">
+                                </div>
+                            </div>
+                        </form>
+                        <form class="formulario-direito">
+                            <div class="container__numero">
+                                <label for="exampleFormControlInput1" class="form-label">Numero:</label>
+                                <input type="text" id="input" class="form-control" aria-labelledby="passwordHelpBlock">
+                            </div>
+                            <div class="container_tempo-previsto">
+                                <label for="exampleFormControlInput1" class="form-label">Tempo previsto:</label>
+                                <input type="time" id="input" class="form-control" aria-labelledby="passwordHelpBlock">
+                            </div>
+                            <div class="container_critico-desejavel">
+                                <div class="materias__container">
+                                    <span>Este critério é:</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Crítico
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Desejavel
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="salvarEditar">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal editar-->
+
+    <!-- modal excluir-->
+    <div class="modal fade" id="modal-excluir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">EXCLUIR CURSO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body excluir-body">
+                    <span class="alert-excluir">Você realmente deseja excluir esse CURSO?</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="excluir">Excluir</button>
+                </div>
+            </div>
+        </div>
+        <!-- modal excluir-->
+        <footer>
+            <span>Copyright 2023 © Todos os direitos reservados.</span>
+            <span>O conteúdo do site não pode ser editado, copiado ou distribuído sem expressa autorização do
+                SENAI-SP.</span>
+
+        </footer>
+</body>
+
+</html>
